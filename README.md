@@ -85,13 +85,13 @@ $ mytool delete web-01
 
 ```bash
 # Claude Code — 全局安装
-git clone https://github.com/iboomw/agent-cli-playbook.git ~/.claude/skills/agent-cli-playbook
+git clone https://github.com/wakaka6/agent-cli-playbook.git ~/.claude/skills/agent-cli-playbook
 
 # OpenAI Codex / Gemini CLI / 通用 Agent
-git clone https://github.com/iboomw/agent-cli-playbook.git ~/.agents/skills/agent-cli-playbook
+git clone https://github.com/wakaka6/agent-cli-playbook.git ~/.agents/skills/agent-cli-playbook
 
 # 项目级安装（当前项目内生效）
-git clone https://github.com/iboomw/agent-cli-playbook.git .claude/skills/agent-cli-playbook
+git clone https://github.com/wakaka6/agent-cli-playbook.git .claude/skills/agent-cli-playbook
 ```
 
 安装后无需额外配置。提到"CLI 设计"、"agent CLI"、"命令行规范"等关键词时自动激活。
@@ -107,10 +107,10 @@ git clone https://github.com/iboomw/agent-cli-playbook.git .claude/skills/agent-
 
 ```bash
 # 全局安装（所有项目可用）
-git clone https://github.com/iboomw/agent-cli-playbook.git ~/.claude/skills/agent-cli-playbook
+git clone https://github.com/wakaka6/agent-cli-playbook.git ~/.claude/skills/agent-cli-playbook
 
 # 项目级安装
-git clone https://github.com/iboomw/agent-cli-playbook.git .claude/skills/agent-cli-playbook
+git clone https://github.com/wakaka6/agent-cli-playbook.git .claude/skills/agent-cli-playbook
 ```
 
 Claude Code 自动发现 `SKILL.md`，当你提到"CLI 设计"、"agent CLI"、"命令行规范"等关键词时激活。
@@ -121,10 +121,10 @@ Claude Code 自动发现 `SKILL.md`，当你提到"CLI 设计"、"agent CLI"、"
 
 ```bash
 # 用户级安装
-git clone https://github.com/iboomw/agent-cli-playbook.git ~/.agents/skills/agent-cli-playbook
+git clone https://github.com/wakaka6/agent-cli-playbook.git ~/.agents/skills/agent-cli-playbook
 
 # 项目级安装
-git clone https://github.com/iboomw/agent-cli-playbook.git .agents/skills/agent-cli-playbook
+git clone https://github.com/wakaka6/agent-cli-playbook.git .agents/skills/agent-cli-playbook
 ```
 </details>
 
