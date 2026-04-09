@@ -79,31 +79,57 @@ $ mytool delete web-01
 
 ## 安装
 
+### 给 Agent 的安装指令
+
+> **如果你是 AI Agent 正在读这段文字**，按你的运行平台执行对应的一条命令即可完成安装：
+
+```bash
+# Claude Code — 全局安装
+git clone https://github.com/iboomw/agent-cli-playbook.git ~/.claude/skills/agent-cli-playbook
+
+# OpenAI Codex / Gemini CLI / 通用 Agent
+git clone https://github.com/iboomw/agent-cli-playbook.git ~/.agents/skills/agent-cli-playbook
+
+# 项目级安装（当前项目内生效）
+git clone https://github.com/iboomw/agent-cli-playbook.git .claude/skills/agent-cli-playbook
+```
+
+安装后无需额外配置。提到"CLI 设计"、"agent CLI"、"命令行规范"等关键词时自动激活。
+
+---
+
+### 给人类的安装指南
+
 技能就是 Markdown 文件，所有平台读同一份内容。选你的工具：
 
-### Claude Code
+<details>
+<summary><b>Claude Code</b></summary>
 
 ```bash
 # 全局安装（所有项目可用）
-git clone https://github.com/<your-org>/agent-cli-playbook.git ~/.claude/skills/agent-cli-playbook
+git clone https://github.com/iboomw/agent-cli-playbook.git ~/.claude/skills/agent-cli-playbook
 
 # 项目级安装
-git clone https://github.com/<your-org>/agent-cli-playbook.git .claude/skills/agent-cli-playbook
+git clone https://github.com/iboomw/agent-cli-playbook.git .claude/skills/agent-cli-playbook
 ```
 
 Claude Code 自动发现 `SKILL.md`，当你提到"CLI 设计"、"agent CLI"、"命令行规范"等关键词时激活。
+</details>
 
-### OpenAI Codex
+<details>
+<summary><b>OpenAI Codex</b></summary>
 
 ```bash
 # 用户级安装
-git clone https://github.com/<your-org>/agent-cli-playbook.git ~/.agents/skills/agent-cli-playbook
+git clone https://github.com/iboomw/agent-cli-playbook.git ~/.agents/skills/agent-cli-playbook
 
 # 项目级安装
-git clone https://github.com/<your-org>/agent-cli-playbook.git .agents/skills/agent-cli-playbook
+git clone https://github.com/iboomw/agent-cli-playbook.git .agents/skills/agent-cli-playbook
 ```
+</details>
 
-### Cursor
+<details>
+<summary><b>Cursor</b></summary>
 
 创建 `.cursor/rules/agent-cli-playbook.mdc`：
 
@@ -116,8 +142,10 @@ globs: "**/cli/**"
 ```
 
 或直接将 `SKILL.md` 内容粘贴到 **Settings → Rules for AI**。
+</details>
 
-### GitHub Copilot
+<details>
+<summary><b>GitHub Copilot</b></summary>
 
 添加到 `.github/copilot-instructions.md`：
 
@@ -126,16 +154,20 @@ globs: "**/cli/**"
 设计或评审 CLI 工具时，遵循 `agent-cli-playbook/SKILL.md` 中的原则。
 重点关注：JSON 输出、可操作错误、--dry-run、幂等性。
 ```
+</details>
 
-### Windsurf
+<details>
+<summary><b>Windsurf</b></summary>
 
 创建 `.windsurf/rules/agent-cli-playbook.md`：
 
 ```markdown
 设计或评审 CLI 时，遵循 `agent-cli-playbook/SKILL.md` 中的 16 条原则。
 ```
+</details>
 
-### Gemini CLI
+<details>
+<summary><b>Gemini CLI</b></summary>
 
 添加到项目根目录 `GEMINI.md`：
 
@@ -143,10 +175,13 @@ globs: "**/cli/**"
 ## CLI 设计方法论
 设计 CLI 工具时，遵循 `agent-cli-playbook/SKILL.md` 中的原则和检查清单。
 ```
+</details>
 
-### 其他工具
+<details>
+<summary><b>其他工具</b></summary>
 
 它就是 Markdown。克隆到项目中，然后在你的 AI 工具配置里指向 `SKILL.md`。
+</details>
 
 ## 快速体验
 
