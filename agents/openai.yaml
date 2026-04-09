@@ -1,0 +1,16 @@
+interface:
+  display_name: "Agent CLI Playbook"
+  short_description: "Agent-first CLI 设计方法论 — 16 条原则，教 LLM Agent 正确调用你的命令行工具"
+  brand_color: "#2563EB"
+
+policy:
+  allow_implicit_invocation: true
+
+capabilities:
+  - 为 LLM Agent 设计新的 CLI 工具（16 条原则 + 检查清单）
+  - 评审现有 CLI 的 Agent 友好度
+  - 把面向人类的 CLI 改造成 Agent 可消费的 JSON 输出格式
+  - 提供推荐输出信封模式和错误码分类
+  - 识别 10 种常见反模式并给出修复方案
+
+prerequisites: []
